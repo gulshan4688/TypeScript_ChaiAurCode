@@ -1,72 +1,82 @@
-// const chai = {
-//     name: "masala Chai",
-//     price: 20,
-//     isHot: true
-// }
+const chai = {
+    name: "masala Chai",
+    price: 20,
+    isHot: true
+}
 
-// // declaring object types 
+// declaring object types 
 
-// let tea: {
-//     name: string,
-//     price: number,
-//     isHot: boolean
-// }
-// tea = {
-//     name: "ginger tea",
-//     price: 25,
-//     isHot: true
-// }
+let tea: {
+    name: string,
+    price: number,
+    isHot: boolean
+}
 
-// // alias objects
+tea = {
+    name: "ginger tea",
+    price: 25,
+    isHot: true
+}
 
-// type Tea = {
-//     name: string,
-//     price: number,
-//     ingredients: string[]
-// }
+// alias objects
 
-// const adrakChai: Tea = {
-//     name: "adrak Chai",
-//     price: 23,
-//     ingredients: ["gingder", "chaiPatti"]
-// }
-
-// type cup = {
-//     size: string
-// }
-
-// let smallCup: cup = {
-//     size: "200ml"
-// }
-// let largeCup = {
-//     size: "300ml",
-//     isBig: true
-// }
-// smallCup = largeCup;
-
-// type brew = { brewTime: number }
-// const coffee = { brewTime: 8, beans: "arabica" }
-// const chaiBrew: brew = coffee;
+type Tea = {
+    name: string,
+    price: number,
+    ingredients: string[]
+}
 
 
-// type user = {
-//     username1: string;
-//     password1: string;
-// }
+const adrakChai: Tea = {
+    name: "adrak Chai",
+    price: 23,
+    ingredients: ["gingder", "chaiPatti"]
+}
 
-// const u3: user = {
-//     username1: "mani",
-//     password1: "123"
-// }
 
-// type Item = { name1: string, quantity: number }
-// type Address = { street: string, pin: number }
 
-// type Order = {
-//     id: string;
-//     items: Item[];   // here items has Item[] type means in here we can put many elements inside this array which contains name1 and quantity 
-//     address: Address;
-// }
+
+
+type cup = {
+    size: string
+}
+
+let smallCup: cup = {
+    size: "200ml"
+}
+
+let largeCup = {
+    size: "300ml",
+    isBig: true
+}
+smallCup = largeCup;
+
+
+
+type brew = { brewTime: number }
+const coffee = { brewTime: 8, beans: "arabica" }
+const chaiBrew: brew = coffee;
+
+
+type user = {
+    username1: string;
+    password1: string;
+}
+
+const u3: user = {
+    username1: "mani",
+    password1: "123"
+}
+
+type Item = { name1: string, quantity: number }
+type Address = { street: string, pin: number }
+
+type Order = {
+    id: string;
+    items: Item[];   // here items has Item[] type means in here we can put many elements inside this array which contains name1 and quantity 
+    address: Address;
+}
+
 
 type Chai = {
     name: string;

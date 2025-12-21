@@ -41,6 +41,7 @@ type cupSize = "small" | "large" ;
 // }
 
 // eg how 
+
 interface  ChaiOrder2 {
     type:string;
     sugar: number;
@@ -76,6 +77,7 @@ function orderChai3(t : teaType){
     console.log(t);
 }
 
+// intersection 
 type baseChai = {
     teaLeaves : number
 } 
